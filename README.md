@@ -1,2 +1,2 @@
 # ModUtils
-[Documentation](Docs/ModUtils.md 'ModUtils')
+[Documentation](Docs/index.md 'ModUtils')
