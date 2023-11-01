@@ -4,15 +4,154 @@
         <name>ModUtils</name>
     </assembly>
     <members>
-        <member name="M:ModUtils.Extensions.HasComponent``1(UnityEngine.GameObject,System.Boolean,System.Boolean)">
+        <member name="M:ModUtils.Extensions.AssemblyExtensions.GetResource(System.Reflection.Assembly,System.String)">
             <summary>
-            Checks if the GameObject has a component of type &lt;T&gt;
+            Returns the embedded resource content as a string
+            </summary>
+            <param name="asm"></param>
+            <param name="resourceName"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:ModUtils.Extensions.AssemblyExtensions.GetAssetBundle(System.Reflection.Assembly,System.String)">
+            <summary>
+            Returns an embedded AssetBundle with the matching name
+            </summary>
+            <param name="asm"></param>
+            <param name="bundleName"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:ModUtils.Extensions.GameObjectExtensions.HasComponent``1(UnityEngine.GameObject,System.Boolean,System.Boolean)">
+            <summary>
+            Checks if the GameObject has a component of type T
             </summary>
             <typeparam name="T"></typeparam>
             <param name="go"></param>
             <param name="checkChildren">(optional [bool])</param>
             <param name="checkParent">(optional [bool])</param>
             <returns>bool true|false</returns>
+        </member>
+        <member name="M:ModUtils.Extensions.GameObjectExtensions.IsGearItem(UnityEngine.GameObject)">
+            <summary>
+            Shorthand for HasComponent GearItem
+            </summary>
+            <param name="go"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Extensions.GameObjectExtensions.IsFoodItem(UnityEngine.GameObject)">
+            <summary>
+            Shorthand for HasComponent&lt;FoodItem&gt;
+            </summary>
+            <param name="go"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Extensions.GameObjectExtensions.IsToolsItem(UnityEngine.GameObject)">
+            <summary>
+            Shorthand for HasComponent&lt;ToolsItem&gt;
+            </summary>
+            <param name="go"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Extensions.GameObjectExtensions.IsStoneItem(UnityEngine.GameObject)">
+            <summary>
+            Shorthand for HasComponent&lt;StoneItem&gt;
+            </summary>
+            <param name="go"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Extensions.GameObjectExtensions.IsFuelSource(UnityEngine.GameObject)">
+            <summary>
+            Shorthand for HasComponent&lt;FuelSourceItem&gt;
+            </summary>
+            <param name="go"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Extensions.GameObjectExtensions.IsCookable(UnityEngine.GameObject)">
+            <summary>
+            Shorthand for HasComponent&lt;Cookable&gt;
+            </summary>
+            <param name="go"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Extensions.GameObjectExtensions.IsHarvestable(UnityEngine.GameObject)">
+            <summary>
+            Shorthand for HasComponent&lt;Harvestable&gt;
+            </summary>
+            <param name="go"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Extensions.GameObjectExtensions.IsBodyHarvest(UnityEngine.GameObject)">
+            <summary>
+            Shorthand for HasComponent&lt;BodyHarvest&gt;
+            </summary>
+            <param name="go"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Extensions.GameObjectExtensions.IsContainer(UnityEngine.GameObject)">
+            <summary>
+            Shorthand for HasComponent&lt;Container&gt;
+            </summary>
+            <param name="go"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Extensions.GameObjectExtensions.IsFlareItem(UnityEngine.GameObject)">
+            <summary>
+            Shorthand for HasComponent&lt;FlareItem&gt;
+            </summary>
+            <param name="go"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Extensions.GameObjectExtensions.IsTorchItem(UnityEngine.GameObject)">
+            <summary>
+            Shorthand for HasComponent&lt;TorchItem&gt;
+            </summary>
+            <param name="go"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Extensions.GameObjectExtensions.IsFirstAidItem(UnityEngine.GameObject)">
+            <summary>
+            Shorthand for HasComponent&lt;FirstAidItem&gt;
+            </summary>
+            <param name="go"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Extensions.GameObjectExtensions.IsLiquidItem(UnityEngine.GameObject)">
+            <summary>
+            Shorthand for HasComponent&lt;LiquidItem&gt;
+            </summary>
+            <param name="go"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Extensions.GameObjectExtensions.IsRopeItem(UnityEngine.GameObject)">
+            <summary>
+            Shorthand for HasComponent&lt;RopeItem&gt;
+            </summary>
+            <param name="go"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Extensions.GameObjectExtensions.IsResearchItem(UnityEngine.GameObject)">
+            <summary>
+            Shorthand for HasComponent&lt;ResearchItem&gt;
+            </summary>
+            <param name="go"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Extensions.GameObjectExtensions.IsBed(UnityEngine.GameObject)">
+            <summary>
+            Shorthand for HasComponent&lt;Bed&gt;
+            </summary>
+            <param name="go"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ModUtils.Console">
+            <summary>
+            Console Commands<para />
+            mu_test<para />
+            mu_timeofday_lock<br />
+            mu_timeofday_unlock<br />
+            </summary>
         </member>
         <member name="T:ModUtils.Mod">
             <summary>
@@ -67,6 +206,13 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:ModUtils.Scene.IsInstance">
+            <summary>
+            Chekc if the current scene is an instance<para />
+            (Cabin or Trailer)
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:ModUtils.Scene.IsGameScene(System.String)">
             <summary>
             Check if the scene is a game scene<para />
@@ -77,10 +223,40 @@
         </member>
         <member name="M:ModUtils.Scene.IsPrimaryScene(System.String)">
             <summary>
-            Check if the scene is the primary scene of the SceneSet<para />
+            NOT WORKING!! Check if the scene is the primary scene of the SceneSet<para />
             (not _SANDBOX,_DLC01)
             </summary>
             <param name="sceneName">If left null Scene.Name() will be used</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Scene.GetActiveSceneSet">
+            <summary>
+            Gets the current active SceneSet
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Scene.GetActiveSceneSetBaseScene">
+            <summary>
+            NOT WORKING!! Gets the base scene name from the current active SceneSet
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Scene.IsFirstLoad">
+            <summary>
+            Check if this is the first time the scene was loaded
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Scene.IsIndoors">
+            <summary>
+            Is the current scene Indoors
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Scene.IsOutdoors">
+            <summary>
+            Is the current scene Outdoors
+            </summary>
             <returns></returns>
         </member>
         <member name="T:ModUtils.TimeOfDay">

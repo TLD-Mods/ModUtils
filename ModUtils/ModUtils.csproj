@@ -28,6 +28,16 @@
 		<DocumentationFile>C:\REPOS\ModUtils\Docs\ModUtils.xml</DocumentationFile>
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <None Remove="TestBundle" />
+	  <None Remove="TestEmbed.txt" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="TestBundle" />
+	  <EmbeddedResource Include="TestEmbed.txt" />
+	</ItemGroup>
+
 	<!--This is the of packages that the mod references.-->
 	<ItemGroup>
 		<!--This package contains almost everything a person could possibly need to reference while modding.-->

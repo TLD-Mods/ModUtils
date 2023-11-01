@@ -1,3 +1,4 @@
+#### [ModUtils](index.md 'index')
 ### [ModUtils](ModUtils.md 'ModUtils').[Mod](ModUtils.Mod.md 'ModUtils.Mod')
 
 ## Mod.IsLoaded(string, bool) Method

@@ -1,6 +1,6 @@
 ﻿namespace ModUtils
 {
-	internal sealed class Main : MelonMod
+    internal sealed class Main : MelonMod
 	{
 
 		public override void OnInitializeMelon()

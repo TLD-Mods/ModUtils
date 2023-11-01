@@ -1,13 +1,8 @@
-### [ModUtils](ModUtils.md 'ModUtils')
+#### [ModUtils](index.md 'index')
 
-## Extensions Class
+## ModUtils.Extensions Namespace
 
-```csharp
-internal static class Extensions
-```
-
-Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.Object 'System.Object') &#129106; Extensions
-
-| Methods | |
+| Classes | |
 | :--- | :--- |
-| [HasComponent&lt;T&gt;(this GameObject, bool, bool)](ModUtils.Extensions.HasComponent_T_(thisUnityEngine.GameObject,bool,bool).md 'ModUtils.Extensions.HasComponent<T>(this UnityEngine.GameObject, bool, bool)') | Checks if the GameObject has a component of type <T> |
+| [AssemblyExtensions](ModUtils.Extensions.AssemblyExtensions.md 'ModUtils.Extensions.AssemblyExtensions') | |
+| [GameObjectExtensions](ModUtils.Extensions.GameObjectExtensions.md 'ModUtils.Extensions.GameObjectExtensions') | |

@@ -1,8 +1,9 @@
+#### [ModUtils](index.md 'index')
 ### [ModUtils](ModUtils.md 'ModUtils').[Scene](ModUtils.Scene.md 'ModUtils.Scene')
 
 ## Scene.IsPrimaryScene(string) Method
 
-Check if the scene is the primary scene of the SceneSet  
+NOT WORKING!! Check if the scene is the primary scene of the SceneSet  
 (not _SANDBOX,_DLC01)
 
 ```csharp

@@ -1,8 +1,10 @@
+#### [ModUtils](index.md 'index')
+
 ## ModUtils Namespace
 
 | Classes | |
 | :--- | :--- |
-| [Extensions](ModUtils.Extensions.md 'ModUtils.Extensions') | |
+| [Console](ModUtils.Console.md 'ModUtils.Console') | Console Commands<br/>mu_test<br/>mu_timeofday_lock<br/><br/>mu_timeofday_unlock<br/> |
 | [Mod](ModUtils.Mod.md 'ModUtils.Mod') | Mod/Assembly Utilities |
 | [Player](ModUtils.Player.md 'ModUtils.Player') | Player Utilities |
 | [SaveGame](ModUtils.SaveGame.md 'ModUtils.SaveGame') | Save Game Utilities |
