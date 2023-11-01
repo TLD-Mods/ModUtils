@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\REPOS\\ModUtils\\ModUtils\\ModUtils.csproj": {}
+  },
+  "projects": {
+    "C:\\REPOS\\ModUtils\\ModUtils\\ModUtils.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\REPOS\\ModUtils\\ModUtils\\ModUtils.csproj",
+        "projectName": "ModUtils",
+        "projectPath": "C:\\REPOS\\ModUtils\\ModUtils\\ModUtils.csproj",
+        "packagesPath": "C:\\Users\\Dom\\.nuget\\packages\\",
+        "outputPath": "C:\\REPOS\\ModUtils\\ModUtils\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\REPOS\\ModUtils\\ModUtils\\NuGet.Config",
+          "C:\\Users\\Dom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "http://165.232.96.237:5555/v3/index.json": {},
+          "http://nuget.tldmods.com/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "DefaultDocumentation": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.8.2, )"
+            },
+            "STBlade.Modding.TLD.Il2CppAssemblies.Windows": {
+              "target": "Package",
+              "version": "[2.23.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ModUtils</name>
+    </assembly>
+    <members>
+        <member name="M:ModUtils.Extensions.HasComponent``1(UnityEngine.GameObject,System.Boolean,System.Boolean)">
+            <summary>
+            Checks if the GameObject has a component of type &lt;T&gt;
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="go"></param>
+            <param name="checkChildren">(optional [bool])</param>
+            <param name="checkParent">(optional [bool])</param>
+            <returns>bool true|false</returns>
+        </member>
+        <member name="T:ModUtils.Mod">
+            <summary>
+            Mod/Assembly Utilities
+            </summary>
+        </member>
+        <member name="M:ModUtils.Mod.IsLoaded(System.String,System.Boolean)">
+            <summary>
+            Check if a mod is loaded
+            </summary>
+            <param name="modName">The Mod/Assembly name</param>
+            <param name="partialSearch">(optional [bool])</param>
+            <returns></returns>
+        </member>
+        <member name="T:ModUtils.Player">
+            <summary>
+            Player Utilities
+            </summary>
+        </member>
+        <member name="M:ModUtils.Player.Object">
+            <summary>
+            Get the Player Object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Player.Position">
+            <summary>
+            Get the Player Position
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ModUtils.SaveGame">
+            <summary>
+            Save Game Utilities
+            </summary>
+        </member>
+        <member name="T:ModUtils.Scene">
+            <summary>
+            Scene Utilities
+            </summary>
+        </member>
+        <member name="M:ModUtils.Scene.Name">
+            <summary>
+            Get active scene name
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Scene.InstanceName">
+            <summary>
+            Get the instance name of the scene<para />
+            (useful for instanced scenes like cabins or trailers)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Scene.IsGameScene(System.String)">
+            <summary>
+            Check if the scene is a game scene<para />
+            (not Empty,Boot,Menu)
+            </summary>
+            <param name="sceneName">If left null Scene.Name() will be used</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Scene.IsPrimaryScene(System.String)">
+            <summary>
+            Check if the scene is the primary scene of the SceneSet<para />
+            (not _SANDBOX,_DLC01)
+            </summary>
+            <param name="sceneName">If left null Scene.Name() will be used</param>
+            <returns></returns>
+        </member>
+        <member name="T:ModUtils.TimeOfDay">
+            <summary>
+            Time of Day Utilities
+            </summary>
+        </member>
+        <member name="M:ModUtils.TimeOfDay.Lock">
+            <summary>
+            Lock the Time Of Day
+            </summary>
+        </member>
+        <member name="M:ModUtils.TimeOfDay.Unlock">
+            <summary>
+            UnLock the Time Of Day
+            </summary>
+        </member>
+        <member name="M:ModUtils.TimeOfDay.IsLocked">
+            <summary>
+            check if the Time Of Day is locked
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

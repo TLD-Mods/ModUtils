@@ -1,0 +1,9 @@
+C:\REPOS\ModUtils\ModUtils\bin\Release\net6.0\ModUtils.deps.json
+C:\REPOS\ModUtils\ModUtils\bin\Release\net6.0\ModUtils.dll
+C:\REPOS\ModUtils\ModUtils\bin\Release\net6.0\ModUtils.xml
+C:\REPOS\ModUtils\ModUtils\obj\Release\net6.0\ModUtils.csproj.AssemblyReference.cache
+C:\REPOS\ModUtils\ModUtils\obj\Release\net6.0\ModUtils.GeneratedMSBuildEditorConfig.editorconfig
+C:\REPOS\ModUtils\ModUtils\obj\Release\net6.0\ModUtils.csproj.CoreCompileInputs.cache
+C:\REPOS\ModUtils\ModUtils\obj\Release\net6.0\ModUtils.dll
+C:\REPOS\ModUtils\ModUtils\obj\Release\net6.0\refint\ModUtils.dll
+C:\REPOS\ModUtils\ModUtils\obj\Release\net6.0\ref\ModUtils.dll
