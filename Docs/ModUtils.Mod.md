@@ -13,4 +13,4 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 
 | Methods | |
 | :--- | :--- |
-| [IsLoaded(string, bool)](ModUtils.Mod.IsLoaded(string,bool).md 'ModUtils.Mod.IsLoaded(string, bool)') | Check if a mod is loaded |
+| [IsLoaded(string, bool)](ModUtils.Mod.IsLoaded(string,bool).md 'ModUtils.Mod.IsLoaded(string, bool)') | Check if a Mod/Assembly is loaded |

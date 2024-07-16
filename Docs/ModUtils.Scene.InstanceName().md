@@ -3,7 +3,7 @@
 
 ## Scene.InstanceName() Method
 
-Get the instance name of the scene  
+Get the instance name of the active scene  
 (useful for instanced scenes like cabins or trailers)
 
 ```csharp

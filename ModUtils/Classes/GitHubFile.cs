@@ -1,7 +1,4 @@
-﻿using MelonLoader.Utils;
-using System.Net;
-
-namespace ModUtils.Classes
+﻿namespace ModUtils.Classes
 {
 	/// <summary>
 	/// GitHubFile Definition

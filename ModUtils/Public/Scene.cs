@@ -6,28 +6,61 @@
     public static class Scene
     {
 
-        /// <summary>
-        /// Get active scene name
-        /// </summary>
-        /// <returns></returns>
-        public static string Name()
-        {
-            return UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
-        }
+		/// <summary>
+		/// Get active scene name
+		/// </summary>
+		/// <returns></returns>
+		public static string Name()
+		{
+			return UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+		}
 
-        /// <summary>
-        /// Get the instance name of the scene<para />
-        /// (useful for instanced scenes like cabins or trailers)
-        /// </summary>
-        /// <returns></returns>
-        public static string InstanceName()
+		/// <summary>
+		/// Get scene display name
+		/// </summary>
+		/// <param name="sceneName">If left null Scene.Name() will be used</param>
+		/// <returns></returns>
+		public static string DisplayName(string? sceneName = null)
+		{
+			sceneName = string.IsNullOrEmpty(sceneName) ? Name() : sceneName;
+			return InterfaceManager.GetNameForScene(sceneName);
+		}
+
+		/// <summary>
+		/// Get scene region name
+		/// </summary>
+		/// <param name="sceneName">If left null Scene.Name() will be used</param>
+		/// <returns></returns>
+		public static string RegionName(string? sceneName = null)
+		{
+			sceneName = string.IsNullOrEmpty(sceneName) ? Name() : sceneName;
+			return InterfaceManager.GetRegionForScene(sceneName);
+		}
+
+		/// <summary>
+		/// Get scene region display name
+		/// </summary>
+		/// <param name="sceneName">If left null Scene.Name() will be used</param>
+		/// <returns></returns>
+		public static string RegionDisplayName(string? sceneName = null)
+		{
+			sceneName = string.IsNullOrEmpty(sceneName) ? Name() : sceneName;
+			return DisplayName(RegionName(sceneName));
+		}
+
+		/// <summary>
+		/// Get the instance name of the active scene<para />
+		/// (useful for instanced scenes like cabins or trailers)
+		/// </summary>
+		/// <returns></returns>
+		public static string InstanceName()
         {
             return GameManager.m_SceneTransitionData.m_SceneSaveFilenameCurrent;
         }
 
 
         /// <summary>
-        /// Chekc if the current scene is an instance<para />
+        /// Chekc if the current active scene is an instance<para />
         /// (Cabin or Trailer)
         /// </summary>
         /// <returns></returns>

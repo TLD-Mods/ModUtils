@@ -3,7 +3,7 @@
 
 ## Mod.IsLoaded(string, bool) Method
 
-Check if a mod is loaded
+Check if a Mod/Assembly is loaded
 
 ```csharp
 public static bool IsLoaded(string modName, bool partialSearch=false);

@@ -13,5 +13,6 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 
 | Methods | |
 | :--- | :--- |
+| [Camera()](ModUtils.Player.Camera().md 'ModUtils.Player.Camera()') | Get the Player Camera |
 | [Object()](ModUtils.Player.Object().md 'ModUtils.Player.Object()') | Get the Player Object |
 | [Position()](ModUtils.Player.Position().md 'ModUtils.Player.Position()') | Get the Player Position |

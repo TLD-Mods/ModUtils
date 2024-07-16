@@ -225,7 +225,7 @@
         </member>
         <member name="M:ModUtils.Mod.IsLoaded(System.String,System.Boolean)">
             <summary>
-            Check if a mod is loaded
+            Check if a Mod/Assembly is loaded
             </summary>
             <param name="modName">The Mod/Assembly name</param>
             <param name="partialSearch">(optional [bool])</param>
@@ -248,6 +248,12 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:ModUtils.Player.Camera">
+            <summary>
+            Get the Player Camera
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:ModUtils.SaveGame">
             <summary>
             Save Game Utilities
@@ -264,16 +270,37 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:ModUtils.Scene.DisplayName(System.String)">
+            <summary>
+            Get scene display name
+            </summary>
+            <param name="sceneName">If left null Scene.Name() will be used</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Scene.RegionName(System.String)">
+            <summary>
+            Get scene region name
+            </summary>
+            <param name="sceneName">If left null Scene.Name() will be used</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModUtils.Scene.RegionDisplayName(System.String)">
+            <summary>
+            Get scene region display name
+            </summary>
+            <param name="sceneName">If left null Scene.Name() will be used</param>
+            <returns></returns>
+        </member>
         <member name="M:ModUtils.Scene.InstanceName">
             <summary>
-            Get the instance name of the scene<para />
+            Get the instance name of the active scene<para />
             (useful for instanced scenes like cabins or trailers)
             </summary>
             <returns></returns>
         </member>
         <member name="M:ModUtils.Scene.IsInstance">
             <summary>
-            Chekc if the current scene is an instance<para />
+            Chekc if the current active scene is an instance<para />
             (Cabin or Trailer)
             </summary>
             <returns></returns>
@@ -328,6 +355,12 @@
             <summary>
             Time of Day Utilities
             </summary>
+        </member>
+        <member name="M:ModUtils.UI.OverlayActive">
+            <summary>
+            Check in any Overlay is active
+            </summary>
+            <returns></returns>
         </member>
     </members>
 </doc>

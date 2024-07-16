@@ -3,7 +3,7 @@
 
 ## Scene.IsInstance() Method
 
-Chekc if the current scene is an instance  
+Chekc if the current active scene is an instance  
 (Cabin or Trailer)
 
 ```csharp

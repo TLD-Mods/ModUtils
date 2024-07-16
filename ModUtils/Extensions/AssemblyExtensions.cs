@@ -2,7 +2,7 @@
 {
 	internal static class AssemblyExtensions
 	{
-
+		internal static Dictionary<string,AssetBundle> loadedBundles = new Dictionary<string,AssetBundle>();
 
 		internal static string GetTrueResourceName(Assembly asm, string resourceName)
 		{
@@ -31,7 +31,7 @@
 			}
 			catch (Exception ex)
 			{
-				Main.Log(ex.Message);
+				Main.LogError(ex.Message);
 				return null;
 			}
 		}
@@ -46,19 +46,23 @@
 		/// <exception cref="System.Exception"></exception>
 		internal static AssetBundle? GetAssetBundle(this Assembly asm, string bundleName)
 		{
+			if(loadedBundles.TryGetValue(bundleName, out AssetBundle loaded))
+			{
+				return loaded;
+			}
 			string trueResourceName = GetTrueResourceName(asm, bundleName);
 			try
 			{
 				using Stream stream = asm.GetManifestResourceStream(trueResourceName) ?? throw new InvalidOperationException($"Failed to load resource: {trueResourceName}");
 				MemoryStream memoryStream = new MemoryStream((int)stream.Length);
 				stream.CopyTo(memoryStream);
-				return memoryStream.Length != 0
-				? AssetBundle.LoadFromMemory(memoryStream.ToArray())
-				: throw new System.Exception($"No data in resource: {trueResourceName}");
+				AssetBundle ab = memoryStream.Length != 0 ? AssetBundle.LoadFromMemory(memoryStream.ToArray()) : throw new System.Exception($"No data in resource: {trueResourceName}");
+				loadedBundles.Add(bundleName,ab);
+				return ab;
 			}
 			catch (Exception ex)
 			{
-				Main.Log(ex.Message);
+				Main.LogError(ex.Message);
 				return null;
 			}
 		}

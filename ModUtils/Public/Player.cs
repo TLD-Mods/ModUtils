@@ -15,13 +15,24 @@
             return GameManager.GetPlayerObject() != null ? GameManager.GetPlayerObject() : null;
         }
 
-        /// <summary>
-        /// Get the Player Position
-        /// </summary>
-        /// <returns></returns>
-        public static Vector3? Position()
-        {
-            return GameManager.GetPlayerTransform() != null ? GameManager.GetPlayerTransform().position : null;
-        }
-    }
+		/// <summary>
+		/// Get the Player Position
+		/// </summary>
+		/// <returns></returns>
+		public static Vector3? Position()
+		{
+			return GameManager.GetPlayerTransform() != null ? GameManager.GetPlayerTransform().position : null;
+		}
+
+
+		/// <summary>
+		/// Get the Player Camera
+		/// </summary>
+		/// <returns></returns>
+		public static vp_FPSCamera? Camera()
+		{
+			return GameManager.GetVpFPSCamera() != null ? GameManager.GetVpFPSCamera() : null;
+		}
+
+	}
 }

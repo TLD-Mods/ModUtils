@@ -1,6 +1,4 @@
-﻿using ModUtils.Classes;
-
-namespace ModUtils
+﻿namespace ModUtils
 {
 
 	/// <summary>
@@ -22,15 +20,19 @@ namespace ModUtils
 			Stopwatch sw = Stopwatch.StartNew();
 			// Scene Tests
 			Main.Log($"Scene.Name | {Scene.Name()}");
+			Main.Log($"Scene.DisplayName | {Scene.DisplayName()}");
+			Main.Log($"Scene.RegionName | {Scene.RegionName()}");
+			Main.Log($"Scene.RegionDisplayName | {Scene.RegionDisplayName()}");
 			Main.Log($"Scene.InstanceName | {Scene.InstanceName()}");
 			Main.Log($"Scene.IsGameScene | {Scene.IsGameScene()}");
 			Main.Log($"Scene.IsInstance | {Scene.IsInstance()}");
 			Main.Log($"Scene.IsFirstLoad | {Scene.IsFirstLoad()}");
-
-
 			Main.Log($"Scene.IsPrimaryScene | {Scene.IsPrimaryScene()}");
 			Main.Log($"Scene.GetActiveSceneSet | {Scene.GetActiveSceneSet()}");
 			Main.Log($"Scene.GetActiveSceneSetBaseScene | {Scene.GetActiveSceneSetBaseScene()}");
+
+			Main.Log($"UI.OverlayActive | {UI.OverlayActive().ToString()}");
+
 
 			// Mod Tests
 			Main.Log($"Mod.IsLoaded modutils | {Mod.IsLoaded("modutils")}");
@@ -40,6 +42,7 @@ namespace ModUtils
 			// Player Tests
 			Main.Log($"Player.Object | {Player.Object()}");
 			Main.Log($"Player.Position | {Player.Position()}");
+			Main.Log($"Player.Camera | {Player.Camera()}");
 
 			// Extensions tests
 			Main.Log($"Ext.GameObject.HasComponent | {Player.Object().HasComponent<vp_FPSPlayer>()}");

@@ -5,13 +5,13 @@
     /// </summary>
     public static class Mod
     {
-        /// <summary>
-        /// Check if a mod is loaded
-        /// </summary>
-        /// <param name="modName">The Mod/Assembly name</param>
-        /// <param name="partialSearch">(optional [bool])</param>
-        /// <returns></returns>
-        public static bool IsLoaded(string modName, bool partialSearch = false)
+		/// <summary>
+		/// Check if a Mod/Assembly is loaded
+		/// </summary>
+		/// <param name="modName">The Mod/Assembly name</param>
+		/// <param name="partialSearch">(optional [bool])</param>
+		/// <returns></returns>
+		public static bool IsLoaded(string modName, bool partialSearch = false)
         {
             modName = modName.ToLowerInvariant();
             if (partialSearch)
