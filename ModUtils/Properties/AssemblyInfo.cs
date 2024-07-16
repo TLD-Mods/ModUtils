@@ -10,6 +10,6 @@
 internal static class BuildInfo
 {
 	internal const string ModName = "ModUtils";
-	internal const string ModAuthor = "THIS SHOULD NOT BE IN USE!!!";
+	internal const string ModAuthor = "TLD-Mods";
 	internal const string ModVersion = "1.0.0";
 }

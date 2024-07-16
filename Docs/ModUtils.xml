@@ -4,6 +4,54 @@
         <name>ModUtils</name>
     </assembly>
     <members>
+        <member name="T:ModUtils.Classes.GitHubFile">
+            <summary>
+            GitHubFile Definition
+            </summary>
+        </member>
+        <member name="P:ModUtils.Classes.GitHubFile.Name">
+            <summary>
+            Used solely for debugging output
+            </summary>
+        </member>
+        <member name="P:ModUtils.Classes.GitHubFile.RemotePath">
+            <summary>
+            Full RAW github path
+            </summary>
+        </member>
+        <member name="P:ModUtils.Classes.GitHubFile.LocalPath">
+            <summary>
+            Local path, relative to \Mods\ folder
+            </summary>
+        </member>
+        <member name="P:ModUtils.Classes.GitHubFile.UpdatePolicy">
+            <summary>
+            When to update the local from remote
+            Default : Changed
+            </summary>
+        </member>
+        <member name="P:ModUtils.Classes.GitHubFile.Updated">
+            <summary>
+            Returns true if the file updated
+            </summary>
+        </member>
+        <member name="P:ModUtils.Classes.GitHubFile.Valid">
+            <summary>
+            Returns true if the supplied information is valid
+            </summary>
+        </member>
+        <member name="M:ModUtils.Classes.GitHubFile.#ctor(System.String,System.String,System.String,ModUtils.Classes.UpdatePolicy)">
+            <summary>
+            <b>(string) name</b><br /><i>Used solely for debugging output</i><br /><br />
+            <b>(string) remotePath</b><br /><i>Full RAW github path</i><br /><br />
+            <b>(string) localPath</b><br /><i>Local path, relative to \Mods\ folder</i><br /><br />
+            <b>(UpdatePolicy) updatePolicy</b><br /><i>When to update the local file from remote (Default: Changed)</i>
+            </summary>
+            <param name="name"></param>
+            <param name="remotePath"></param>
+            <param name="localPath"></param>
+            <param name="updatePolicy"></param>
+        </member>
         <member name="M:ModUtils.Extensions.AssemblyExtensions.GetResource(System.Reflection.Assembly,System.String)">
             <summary>
             Returns the embedded resource content as a string
@@ -153,6 +201,23 @@
             mu_timeofday_unlock<br />
             </summary>
         </member>
+        <member name="T:ModUtils.Github">
+            <summary>
+            GitHub Utilities
+            </summary>
+        </member>
+        <member name="M:ModUtils.Github.SyncFile(System.String,System.String,System.String,ModUtils.Classes.UpdatePolicy)">
+            <summary>
+            <b>(string) name</b><br /><i>Used solely for debugging output</i><br /><br />
+            <b>(string) remotePath</b><br /><i>Full RAW github path</i><br /><br />
+            <b>(string) localPath</b><br /><i>Local path, relative to \Mods\ folder</i><br /><br />
+            <b>(UpdatePolicy) updatePolicy</b><br /><i>When to update the local file from remote (Default: Changed)</i>
+            </summary>
+            <param name="name"></param>
+            <param name="remotePath"></param>
+            <param name="localPath"></param>
+            <param name="updatePolicy"></param>
+        </member>
         <member name="T:ModUtils.Mod">
             <summary>
             Mod/Assembly Utilities
@@ -263,22 +328,6 @@
             <summary>
             Time of Day Utilities
             </summary>
-        </member>
-        <member name="M:ModUtils.TimeOfDay.Lock">
-            <summary>
-            Lock the Time Of Day
-            </summary>
-        </member>
-        <member name="M:ModUtils.TimeOfDay.Unlock">
-            <summary>
-            UnLock the Time Of Day
-            </summary>
-        </member>
-        <member name="M:ModUtils.TimeOfDay.IsLocked">
-            <summary>
-            check if the Time Of Day is locked
-            </summary>
-            <returns></returns>
         </member>
     </members>
 </doc>
