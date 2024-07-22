@@ -37,7 +37,7 @@
 		/// </summary>
 		/// <param name="go"></param>
 		/// <returns></returns>
-		internal static bool IsGearItem(this UnityEngine.GameObject go) => go.HasComponent<GearItem>();
+		internal static bool IsGearItem(this UnityEngine.GameObject go) => go.HasComponent<Item>();
 
 
 		/// <summary>
